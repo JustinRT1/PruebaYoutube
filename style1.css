@@ -149,10 +149,10 @@ body {
     border-top: 1px solid var(--BrgButtons);
     border-bottom: 1px solid var(--BrgButtons);
     background-color: var(--BgrHeader);
-    overflow-x: auto;
+    /* overflow-x: auto; */
 }
 
-.filter::-webkit-scrollbar {
+/* .filter::-webkit-scrollbar {
     height: 4px;
     background-color: var(--BrgMain);
 }
@@ -161,7 +161,7 @@ body {
     border: 1px solid var(--BrgMain);
     border-radius: 50px;
     background-color: var(--Info);
-}
+} */
 
 .filter .buttons-filter1 {
     cursor: pointer;
