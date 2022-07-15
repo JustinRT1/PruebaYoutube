@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* scroll-behavior: smooth; */
 }
 
 :root {
@@ -34,10 +33,10 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-areas:
-        "header"
-        "filter"
-        "main"
-        "left-bar"
+    "header"
+    "filter"
+    "main"
+    "left-bar"
     ;
     background-color: #212121;
 }
@@ -49,7 +48,6 @@ body {
     grid-template-columns: repeat(2, auto);
     grid-template-areas: "logo icons";
     width: 100%;
-    max-width: 425px;
     height: 56px;
     background-color: var(--BgrHeader);
 }
@@ -133,20 +131,14 @@ body {
 
 /* * ---------- LEFT-BAR ---------- */
 .left-bar {
-    position: absolute;
-    display: flex;
     grid-area: left-bar;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
 }
 
 .left-bar .buttons-nav {
-    position: fixed;
     cursor: pointer;
     display: grid;
     grid-template-rows: 54px;
-    grid-template-columns: repeat(5, minmax(64px, 85px));
+    grid-template-columns: repeat(5, minmax(64px, 153.6px));
     grid-template-areas: "item-1 item-2 item-3 item-4 item-5";
     font-size: 8px;
     color: white;
@@ -238,6 +230,7 @@ body {
     border-bottom: 1px solid var(--BrgButtons);
     background-color: var(--BgrHeader);
     overflow-x: auto;
+    z-index: 1;
 }
 
 .filter::-webkit-scrollbar {
@@ -279,6 +272,7 @@ body {
 .main {
     grid-area: main;
     background-color: var(--BrgMain);
+    z-index: 1;
 }
 
 .main .grid-videos {
