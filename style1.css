@@ -133,10 +133,95 @@ body {
 
 /* * ---------- LEFT-BAR ---------- */
 .left-bar {
+    position: absolute;
     grid-area: left-bar;
-    /* background-color: var(--BrgNav); */
-    background-color: blue;
 }
+
+.left-bar .buttons-nav {
+    position: fixed;
+    top: 503px;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: 52px;
+    grid-template-columns: repeat(5, minmax(64px, 85px));
+    grid-template-areas: "item-1 item-2 item-3 item-4 item-5";
+    font-size: 8px;
+    color: white;
+    background-color: var(--BrgNav);
+}
+
+.left-bar .buttons-nav .item-1 .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+.left-bar .buttons-nav .item-1 {
+    display: flex;
+    grid-area: item-1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-bar .buttons-nav .item-1:hover {
+    width: 100%;
+    background-color: var(--BrgHoverNav);
+}
+
+.left-bar .buttons-nav .item-2 {
+    display: flex;
+    grid-area: item-2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-bar .buttons-nav .item-2:hover {
+    width: 100%;
+    background-color: var(--BrgHoverNav);
+}
+
+.left-bar .buttons-nav .item-3 {
+    display: flex;
+    grid-area: item-3;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-bar .buttons-nav .item-3:hover {
+    width: 100%;
+    background-color: var(--BrgHoverNav);
+}
+
+.left-bar .buttons-nav .item-4 {
+    display: flex;
+    grid-area: item-4;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-bar .buttons-nav .item-4:hover {
+    width: 100%;
+    background-color: var(--BrgHoverNav);
+}
+
+.left-bar .buttons-nav .item-5 {
+    display: flex;
+    grid-area: item-5;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-bar .buttons-nav .item-5:hover {
+    background-color: var(--BrgHoverNav);
+}
+
 
 /* * ---------- FILTER ---------- */
 .filter {
@@ -152,7 +237,7 @@ body {
     overflow-x: auto;
 }
 
-/* .filter::-webkit-scrollbar {
+.filter::-webkit-scrollbar {
     height: 4px;
     background-color: var(--BrgMain);
 }
@@ -161,7 +246,7 @@ body {
     border: 1px solid var(--BrgMain);
     border-radius: 50px;
     background-color: var(--Info);
-} */
+}
 
 .filter .buttons-filter1 {
     cursor: pointer;
