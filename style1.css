@@ -134,15 +134,18 @@ body {
 /* * ---------- LEFT-BAR ---------- */
 .left-bar {
     position: absolute;
+    display: flex;
     grid-area: left-bar;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
 }
 
 .left-bar .buttons-nav {
     position: fixed;
-    top: 503px;
     cursor: pointer;
     display: grid;
-    grid-template-rows: 52px;
+    grid-template-rows: 54px;
     grid-template-columns: repeat(5, minmax(64px, 85px));
     grid-template-areas: "item-1 item-2 item-3 item-4 item-5";
     font-size: 8px;
@@ -311,7 +314,7 @@ body {
 .main .grid-videos .container-media .info {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 52px auto;
+    grid-template-columns: 58px auto;
     grid-template-areas: "img titulo""img mas-info";
 }
 
@@ -319,7 +322,7 @@ body {
     grid-area: img;
     width: 40px;
     height: 40px;
-    margin: 0 4px;
+    margin: 0 10px;
     border-radius: 100px;
 }
 
